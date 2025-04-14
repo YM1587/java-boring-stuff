@@ -1,8 +1,8 @@
-##Java - Fibonacci Recursion and Optimization
+<h2>Java - Fibonacci Recursion and Optimization</h2>
 How to Compile and Run
 If you're having trouble compiling the program, try the following commands:
 ```bash
-# Bash commands go here
+Bash 
 javac Fibonacci/Fibonacci.java
 java Fibonacci.Fibonacci
 ```
