@@ -36,3 +36,7 @@ Because the program uses Java's long data type to store Fibonacci numbers, the m
 9,223,372,036,854,775,807 (Long.MAX_VALUE)
 ```
 The largest Fibonacci number that can safely fit in a long is f(92). Beyond that, the values will overflow and become negative due to data type limitations.
+## Memoization in the Fibonacci Algorithm
+In the original recursive Fibonacci implementation, the same values are recalculated multiple times. For example, to calculate ```f(5)```, the program will compute ```f(4)``` and ```f(3)```—but to compute ```f(4)```, it will also recalculate ```f(3)``` again, and so on. This leads to a large number of redundant operations and exponential time complexity.
+
+Memoization is an optimization technique used to avoid this redundancy. It involves storing the results of expensive function calls and returning the cached result when the same inputs occur again.
